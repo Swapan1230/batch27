@@ -37,11 +37,19 @@ public class ArithemeticOperator {
             System.out.println("You are still a KID");
         }
 
+        // initilization ; condition check; increment
+//        for(int i = 0; i < 5; i++) {
+//            System.out.println("Jayram "+ i);
+//        }
 
 
-        for(int i = 0; i < 5; i++) {
-            System.out.println("Jayram");
+        for(int i = 0; i < 5; i+=4) {
+            System.out.println("Jayram "+ i);
         }
+
+//        for(int i = 0; i < 5;) {
+//            System.out.println("Jayram"+ i);
+//        }
 
 
         // Increment

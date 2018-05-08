@@ -12,11 +12,17 @@ public class Increment {
 //        year++;
 //        System.out.println(year);
 
+            // year++ : print and increment
+//        System.out.println(year++);
+//        System.out.println(year++);
+//        System.out.println(year++);
+//        System.out.println(year);
+//   can we put ++ in front "year"?
 
-        System.out.println(year++);
+        // 2018 ++year: increment and then print
+        System.out.println(++year);
         System.out.println(year++);
         System.out.println(year++);
         System.out.println(year);
-
     }
 }

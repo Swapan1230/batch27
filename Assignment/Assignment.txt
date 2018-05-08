@@ -1,0 +1,7 @@
+Go to the below link:
+https://github.com/jayramrout/Assignment/tree/master/JavaAssignment/src/corejava
+
+And do the assignment :
+    Assignment1.txt
+    ifelse
+    forloop

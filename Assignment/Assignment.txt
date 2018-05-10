@@ -5,3 +5,6 @@ And do the assignment :
     Assignment1.txt
     ifelse
     forloop
+
+05/09:
+    look into the Assignment/JavaAssignment/src/corejava/array/

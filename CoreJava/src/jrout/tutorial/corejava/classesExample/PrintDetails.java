@@ -1,5 +1,8 @@
 package jrout.tutorial.corejava.classesExample;
 
+import jrout.tutorial.corejava.pojo.Person;
+import jrout.tutorial.corejava.pojo.Student;
+
 public class PrintDetails {
     /**
      *

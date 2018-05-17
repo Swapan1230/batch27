@@ -1,5 +1,7 @@
 package jrout.tutorial.corejava.classesExample;
 
+import jrout.tutorial.corejava.pojo.Student;
+
 public class MethodMain {
 
     public static void main(String[] args) {

@@ -1,5 +1,7 @@
-package jrout.tutorial.corejava.classesExample;
+package jrout.tutorial.corejava.pojo;
 
+
+import jrout.tutorial.corejava.pojo.Address;
 
 public class Student {
     private String name;

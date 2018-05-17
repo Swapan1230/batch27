@@ -1,4 +1,4 @@
-package jrout.tutorial.corejava.classesExample;
+package jrout.tutorial.corejava.pojo;
 
 public class Address {
     private String address1;

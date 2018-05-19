@@ -11,13 +11,21 @@ public class Person {
 
     Address address;
 
+    public Person(){
+
+    }
+    public Person(String name){
+        System.out.println("Object is created for "+name);
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    /*public void setName(String name) {
         this.name = name;
-    }
+    }*/
 
     public String getType() {
         return type;
@@ -65,5 +73,15 @@ public class Person {
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("***************************I am been destroyed.."+ this.name);
     }
 }

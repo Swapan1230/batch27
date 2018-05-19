@@ -6,6 +6,7 @@ public class Employee {
     private int id;
     private String department;
     private String time;
+    private Address address;
 
     /*public Employee(){
         System.out.println("This is a constructor...");

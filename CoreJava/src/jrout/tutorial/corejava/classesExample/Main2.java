@@ -10,5 +10,7 @@ public class Main2 {
         System.out.println("messageOne == messageTwo : "+ (messageOne == messageTwo));
         System.out.println("messageOne == messageTwo : "+ (messageOne.equals(messageTwo)));
 
+//        TajHotel.TajSecurity security = new TajHotel().new TajSecurity();
+
     }
 }

@@ -1,5 +1,7 @@
 package jrout.tutorial.corejava.classesExample;
 
+import jrout.tutorial.corejava.util.Constant;
+
 public class Main2 {
     public static void main(String[] args) {
 
@@ -11,6 +13,14 @@ public class Main2 {
         System.out.println("messageOne == messageTwo : "+ (messageOne.equals(messageTwo)));
 
 //        TajHotel.TajSecurity security = new TajHotel().new TajSecurity();
+
+
+//        final int height = 5;
+//        height = 10;
+        Constant  constant = new Constant();
+
+        System.out.println("Today is "+ constant);
+
 
     }
 }

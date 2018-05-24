@@ -6,8 +6,8 @@ public class Main {
 
         itEngineer = new Infrastructure("Sam",123);
         printDetails(itEngineer);
-        itEngineer = new Software("Tom",334);
-        printDetails(itEngineer);
+//        itEngineer = new Software("Tom",334);
+//        printDetails(itEngineer);
         itEngineer = new Database("Peter",287);
         printDetails(itEngineer);
 

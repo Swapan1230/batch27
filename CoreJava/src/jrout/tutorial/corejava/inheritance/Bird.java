@@ -52,4 +52,9 @@ public class Bird extends Animal {
     public void setCanFly(boolean canFly) {
         this.canFly = canFly;
     }
+
+    @Override
+    public void makeNoise(){
+        System.out.println( getType() + " I am making some chirping.........");
+    }
 }

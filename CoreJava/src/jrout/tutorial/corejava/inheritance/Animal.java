@@ -67,6 +67,11 @@ public class Animal {
     }
 
 
+    public void makeNoise(){
+        System.out.println( type + " I am making some Roaring.......");
+    }
+
+
 
 
     @Override

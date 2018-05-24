@@ -6,15 +6,13 @@ package jrout.tutorial.corejava.concepts;
 
 class Factorial{
 
-    int fact(int n){  // 1
+    int fact(int n) {  // 1
         int result;
         if(n == 1) return 1;
         result = fact(n-1) * n; // 2
         return result;
     }
 }
-
-
 
 public class Recursion {
     public static void main(String[] args) {

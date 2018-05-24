@@ -7,7 +7,12 @@ public class DesertedAnimal extends Animal {
 
     public DesertedAnimal(String name, String type){
         this();
-        super.getLegs();
-        getLegs();
+        setName(name);
+
+    }
+
+    @Override
+    public void makeNoise(){
+        System.out.println(getType() + " I am going to make some loud noise...");
     }
 }

@@ -15,7 +15,12 @@ public class Main {
 //        itEngineer = new ITEngineer("Ben",3444,"No Department");
         itEngineer = new JavaSoftware("Sreedhar",333);
 
+        // So, I am able to access total time because its public
+        JavaSoftware software = new JavaSoftware("testSw",232);
+        System.out.println(software.totalTime);
+        System.out.println(software.skillLevel);
 
+        software.callProtected();
 
     }
 

@@ -1,5 +1,8 @@
 package jrout.tutorial.corejava.inheritance;
 
+import jrout.tutorial.corejava.inheritance.abstractexample.Database;
+import jrout.tutorial.corejava.inheritance.abstractexample.JavaSoftware;
+
 public class Main {
     public static void main(String[] args) {
         Main main = new Main();
@@ -26,6 +29,14 @@ public class Main {
 
 //      Bird bb = new Lion("",false);
 
+        Database db = new Database("test",232);
+
+
+
+        // So, I am able to access total time because its public
+        JavaSoftware software = new JavaSoftware("testSw",232);
+        System.out.println(software.totalTime);
+//        software.callProtected();
     }
 
     /*public void printBirdDetails(Bird bird){

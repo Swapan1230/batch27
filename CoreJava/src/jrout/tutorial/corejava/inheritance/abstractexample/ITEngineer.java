@@ -1,4 +1,5 @@
 package jrout.tutorial.corejava.inheritance.abstractexample;
+import java.lang.Object;
 
 public abstract class ITEngineer {
     private String name;
@@ -32,7 +33,7 @@ public abstract class ITEngineer {
         this.empId = empId;
     }
 
-    public void companyName() {
+    final public void companyName() {
         System.out.println("I belong to H2kInfosys...");
     }
 

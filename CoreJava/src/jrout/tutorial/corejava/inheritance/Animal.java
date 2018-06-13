@@ -75,7 +75,10 @@ public class Animal {
 
 
     @Override
+//    public String toString() {
+//        return "I am of Type ["+ this.type +"] Is Jumpable = ["+ this.isHuman+"]";
+//    }
     public String toString() {
-        return "I am of Type ["+ this.type +"] Is Jumpable = ["+ this.isHuman+"]";
+        return type +" : "+ name;
     }
 }

@@ -1,4 +1,4 @@
-package jrout.tutorial.servlet;
+package jrout.tutorial.servlet.dao.impl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployeeDAO {
+import jrout.tutorial.servlet.dao.IEmployeeDAO;
+
+public class EmployeeDAOImpl implements IEmployeeDAO{
+	
 	public List<String[]> getEmployee(String fname,String lname){
 		List<String[]> empDetails = new ArrayList<>();
 		String url = "jdbc:mysql://localhost:3306/employees?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
@@ -26,10 +29,14 @@ public class EmployeeDAO {
 
             connection = DriverManager.getConnection(url,username,password);
             System.out.println("Connection Established...");
-
-            psmt = connection.prepareStatement("select * from employees.employees where first_name = ? and last_name = ?");
-            psmt.setString(1,fname);
-            psmt.setString(2,lname);
+            if("".equals(lname) || lname == null) {
+            		psmt = connection.prepareStatement("select * from employees.employees where first_name = ?");
+            		psmt.setString(1,fname);
+            }else {
+                psmt = connection.prepareStatement("select * from employees.employees where first_name = ? and last_name = ?");
+                psmt.setString(1,fname);
+                psmt.setString(2,lname);
+            }
             
             rs = psmt.executeQuery();
             while(rs.next()){
@@ -70,5 +77,11 @@ public class EmployeeDAO {
 
         System.out.println("Program is complete..");
         return empDetails;
+	}
+
+	@Override
+	public String[] getEmployeeWithID(int empId) {
+		String [] employee = {"12345","Jayram","34-34-4567"};
+		return employee;
 	}
 }

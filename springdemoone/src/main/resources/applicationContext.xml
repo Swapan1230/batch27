@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="
-        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="company" class="jrout.tutorial.batch27.spring.core.impl.MarutiCompanyImpl"/>
+    <!--<bean id="music" class="jrout.tutorial.batch27.spring.core.impl.MusicBoseImpl"/>-->
+    <bean id="music" class="jrout.tutorial.batch27.spring.core.impl.MusicPhilipsImpl"/>
+    <bean id="date" class="java.util.Date"/>
+
+    <bean id="company" class="jrout.tutorial.batch27.spring.core.impl.MarutiCompanyImpl">
+        <property name="musicSystem" ref="music"/>
+        <property name="name" value="MarutiOfBombay"/>
+        <property name="date">
+            <bean id="date" class="java.util.Date"/>
+        </property>
+
+        <!--<property name="date" ref="date"/>-->
+    </bean>
 
 
+    <bean id="company2" class="jrout.tutorial.batch27.spring.core.impl.MarutiCompanyImpl"
+    p:date-ref="date" p:musicSystem-ref="music" p:name="MarutiOfDelhi"/>
+
+    <bean id="company3" class="jrout.tutorial.batch27.spring.core.impl.MarutiCompanyImpl">
+        <constructor-arg ref="music"/>
+        <constructor-arg value="MarutiOfChennai"/>
+        <constructor-arg ref="date"/>
+    </bean>
 </beans>
